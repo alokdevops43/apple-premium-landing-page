@@ -1,0 +1,5020 @@
+/*==================================================
+            GOOGLE FONT
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/*==================================================
+            RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#000;
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+section{
+
+    padding:120px 8%;
+
+    position:relative;
+
+}
+
+/*==================================================
+            VARIABLES
+==================================================*/
+
+:root{
+
+    --primary:#0071e3;
+
+    --black:#000;
+
+    --dark:#111;
+
+    --gray:#86868b;
+
+    --white:#fff;
+
+    --border:rgba(255,255,255,.08);
+
+    --transition:.4s;
+
+    --radius:22px;
+
+}
+
+/*==================================================
+            SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#000;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#444;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary);
+
+}
+
+/*==================================================
+            TEXT SELECTION
+==================================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==================================================
+            PRELOADER
+==================================================*/
+
+#preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:999999;
+
+}
+
+.loader{
+
+    width:65px;
+
+    height:65px;
+
+    border:5px solid #222;
+
+    border-top:5px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+#preloader h2{
+
+    margin-top:20px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==================================================
+            PROGRESS BAR
+==================================================*/
+
+#progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:var(--primary);
+
+    z-index:99999;
+
+}
+
+/*==================================================
+            NAVBAR
+==================================================*/
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:9999;
+
+    backdrop-filter:blur(30px);
+
+    background:rgba(0,0,0,.35);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.navbar{
+
+    width:92%;
+
+    height:85px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+}
+
+.logo a{
+
+    color:#fff;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.nav-links a{
+
+    color:#ccc;
+
+    font-size:16px;
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+    color:#fff;
+
+}
+
+.nav-icons{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+.nav-icons i{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.nav-icons i:hover{
+
+    color:var(--primary);
+
+    transform:translateY(-3px);
+
+}
+
+/*==================================================
+            BUTTONS
+==================================================*/
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 42px;
+
+    border-radius:999px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.primary{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.primary:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 40px rgba(0,113,227,.45);
+
+}
+
+.secondary{
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:#fff;
+
+}
+
+.secondary:hover{
+
+    background:#fff;
+
+    color:#000;
+
+}
+
+/*==================================================
+            SECTION TITLE
+==================================================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:90px;
+
+}
+
+.section-title span{
+
+    color:var(--primary);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:15px;
+
+}
+
+.section-title h2{
+
+    margin-top:15px;
+
+    font-size:56px;
+
+    font-weight:800;
+
+}
+
+.section-title p{
+
+    width:700px;
+
+    max-width:100%;
+
+    margin:20px auto;
+
+    color:#aaa;
+
+    font-size:18px;
+
+}
+
+/*==================================================
+                HERO SECTION
+==================================================*/
+
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding-top:140px;
+
+}
+
+/*==================================================
+            HERO BACKGROUND
+==================================================*/
+
+.hero-bg{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:.28;
+
+    z-index:-3;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.88)
+    );
+
+    z-index:-2;
+
+}
+
+/*==================================================
+            HERO LEFT
+==================================================*/
+
+.hero-left{
+
+    width:50%;
+
+    z-index:5;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:15px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-left h1{
+
+    font-size:84px;
+
+    line-height:1;
+
+    font-weight:900;
+
+    margin-bottom:18px;
+
+}
+
+.hero-left h2{
+
+    font-size:58px;
+
+    line-height:1.15;
+
+    margin-bottom:28px;
+
+    color:#f2f2f2;
+
+}
+
+.hero-left p{
+
+    color:#9b9b9b;
+
+    font-size:19px;
+
+    width:600px;
+
+    max-width:100%;
+
+    margin-bottom:45px;
+
+}
+
+/*==================================================
+            HERO BUTTONS
+==================================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+.hero-buttons .btn{
+
+    min-width:180px;
+
+    text-align:center;
+
+}
+
+/*==================================================
+            HERO RIGHT
+==================================================*/
+
+.hero-right{
+
+    width:48%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.hero-right img{
+
+    width:82%;
+
+    animation:phoneFloat 6s ease-in-out infinite;
+
+    filter:
+    drop-shadow(0 40px 80px rgba(0,113,227,.18))
+    drop-shadow(0 0 60px rgba(255,255,255,.08));
+
+}
+
+/*==================================================
+            HERO GLOW
+==================================================*/
+
+.hero-right::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(0,113,227,.18);
+
+    filter:blur(120px);
+
+    z-index:-1;
+
+}
+
+/*==================================================
+            HERO TITLE EFFECT
+==================================================*/
+
+.hero-left h1{
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #cfcfcf,
+        #ffffff
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+/*==================================================
+            HERO PARAGRAPH
+==================================================*/
+
+.hero-left p{
+
+    letter-spacing:.3px;
+
+    line-height:1.9;
+
+}
+
+/*==================================================
+            FLOATING ANIMATION
+==================================================*/
+
+@keyframes phoneFloat{
+
+    0%{
+
+        transform:
+        translateY(0px)
+        rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:
+        translateY(-12px)
+        rotate(1deg);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-25px)
+        rotate(0deg);
+
+    }
+
+    75%{
+
+        transform:
+        translateY(-12px)
+        rotate(-1deg);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(0px)
+        rotate(0deg);
+
+    }
+
+}
+
+/*==================================================
+            HERO FADE
+==================================================*/
+
+.hero-left>*{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+.hero-left h1{
+
+    animation-delay:.2s;
+
+}
+
+.hero-left h2{
+
+    animation-delay:.4s;
+
+}
+
+.hero-left p{
+
+    animation-delay:.6s;
+
+}
+
+.hero-buttons{
+
+    animation:fadeUp 1s ease forwards;
+
+    animation-delay:.8s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+            SCROLL INDICATOR
+==================================================*/
+
+.scroll-down{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:30px;
+
+    transform:translateX(-50%);
+
+    font-size:14px;
+
+    color:#999;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+.scroll-down::after{
+
+    content:"";
+
+    display:block;
+
+    width:2px;
+
+    height:45px;
+
+    background:#555;
+
+    margin:12px auto 0;
+
+    animation:scrollMove 1.6s infinite;
+
+}
+
+@keyframes scrollMove{
+
+    0%{
+
+        transform:scaleY(0);
+
+        transform-origin:top;
+
+    }
+
+    50%{
+
+        transform:scaleY(1);
+
+        transform-origin:top;
+
+    }
+
+    51%{
+
+        transform-origin:bottom;
+
+    }
+
+    100%{
+
+        transform:scaleY(0);
+
+        transform-origin:bottom;
+
+    }
+
+}
+
+/*==================================================
+                DESIGN SHOWCASE
+==================================================*/
+
+#showcase{
+
+    background:#050505;
+
+}
+
+.design-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.design-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:all .45s ease;
+
+    backdrop-filter:blur(18px);
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.design-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    left:-120px;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(0,113,227,.08);
+
+    border-radius:50%;
+
+    filter:blur(70px);
+
+    transition:.5s;
+
+}
+
+.design-card:hover::before{
+
+    transform:scale(1.6);
+
+}
+
+.design-card:hover{
+
+    transform:translateY(-14px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(0,113,227,.15);
+
+}
+
+.design-card img{
+
+    width:85%;
+
+    margin:auto;
+
+    transition:.5s;
+
+}
+
+.design-card:hover img{
+
+    transform:scale(1.08) rotate(-3deg);
+
+}
+
+.design-card h3{
+
+    margin-top:30px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.design-card p{
+
+    color:var(--gray);
+
+    margin-top:15px;
+
+    font-size:16px;
+
+}
+
+/*==================================================
+                FEATURES
+==================================================*/
+
+#features{
+
+    background:#000;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.feature-card{
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:25px;
+
+    padding:40px 30px;
+
+    transition:.45s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.feature-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(0,113,227,.08);
+
+    border-radius:50%;
+
+    right:-120px;
+
+    bottom:-120px;
+
+    filter:blur(80px);
+
+    transition:.45s;
+
+}
+
+.feature-card:hover::after{
+
+    transform:scale(1.4);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 25px 60px rgba(0,113,227,.12);
+
+}
+
+.feature-card i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:30px;
+
+}
+
+.feature-card h3{
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+}
+
+.feature-card p{
+
+    color:var(--gray);
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+            GLASS EFFECT
+==================================================*/
+
+.glass{
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/*==================================================
+            HOVER GLOW
+==================================================*/
+
+.design-card,
+.feature-card{
+
+    cursor:pointer;
+
+}
+
+.design-card:hover,
+.feature-card:hover{
+
+    box-shadow:
+    0 15px 50px rgba(0,113,227,.18),
+    0 0 20px rgba(255,255,255,.04);
+
+}
+
+/*==================================================
+            IMAGE EFFECT
+==================================================*/
+
+.design-card img{
+
+    filter:drop-shadow(
+        0 20px 35px rgba(255,255,255,.08)
+    );
+
+}
+
+/*==================================================
+            END PART 3
+==================================================*/
+
+
+/*==================================================
+                AI SECTION
+==================================================*/
+
+#ai{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+    background:#050505;
+
+}
+
+.ai-left,
+.ai-right{
+
+    flex:1;
+
+}
+
+.ai-left{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.ai-left img{
+
+    width:80%;
+
+    filter:drop-shadow(0 35px 60px rgba(0,113,227,.18));
+
+    transition:.5s;
+
+}
+
+.ai-left img:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+}
+
+.ai-right span{
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
+
+.ai-right h2{
+
+    font-size:56px;
+
+    line-height:1.2;
+
+    margin:20px 0;
+
+}
+
+.ai-right p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+/*==================================================
+                CAMERA SECTION
+==================================================*/
+
+#camera{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:90px;
+
+}
+
+.camera-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.camera-text,
+.camera-image{
+
+    flex:1;
+
+}
+
+.camera-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.camera-image img{
+
+    width:85%;
+
+    transition:.45s;
+
+}
+
+.camera-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.camera-text span{
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.camera-text h2{
+
+    font-size:58px;
+
+    margin:20px 0;
+
+}
+
+.camera-text p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+.camera-text ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.camera-text li{
+
+    color:#ddd;
+
+    font-size:17px;
+
+}
+
+/*==================================================
+                DISPLAY SECTION
+==================================================*/
+
+#display{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    background:#050505;
+
+}
+
+.display-image,
+.display-text{
+
+    flex:1;
+
+}
+
+.display-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.display-image img{
+
+    width:80%;
+
+    transition:.5s;
+
+}
+
+.display-image img:hover{
+
+    transform:rotate(-2deg) scale(1.05);
+
+}
+
+.display-text span{
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.display-text h2{
+
+    font-size:58px;
+
+    margin:20px 0;
+
+}
+
+.display-text p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+/*==================================================
+            PERFORMANCE SECTION
+==================================================*/
+
+#performance{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+}
+
+.performance-left,
+.performance-right{
+
+    flex:1;
+
+}
+
+.performance-left{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.performance-left img{
+
+    width:78%;
+
+    transition:.5s;
+
+}
+
+.performance-left img:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.performance-right span{
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.performance-right h2{
+
+    font-size:58px;
+
+    margin:20px 0;
+
+}
+
+.performance-right p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+/*==================================================
+                STATS
+==================================================*/
+
+#stats{
+
+    background:#050505;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.stat{
+
+    background:#111;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+.stat:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+.stat h2{
+
+    font-size:54px;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.stat p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+}
+
+/*==================================================
+                END PART 4
+==================================================*/
+
+/*==================================================
+                GALLERY
+==================================================*/
+
+#gallery{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#000;
+
+}
+
+.gallery-background{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-2;
+
+    opacity:.18;
+
+}
+
+.gallery-background img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.gallery-item{
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    cursor:pointer;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:contain;
+
+    transition:.5s;
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 25px 60px rgba(0,113,227,.18);
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==================================================
+            SPECIFICATIONS
+==================================================*/
+
+#specs{
+
+    background:#050505;
+
+}
+
+.spec-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.spec-card{
+
+    background:#111;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.45s;
+
+}
+
+.spec-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+.spec-card h3{
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.spec-card p{
+
+    color:#ccc;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+                PRICING
+==================================================*/
+
+#pricing{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.pricing-card{
+
+    width:700px;
+
+    max-width:100%;
+
+    background:linear-gradient(
+        135deg,
+        #111,
+        #1b1b1b
+    );
+
+    border-radius:30px;
+
+    padding:70px 50px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.45s;
+
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 35px 70px rgba(0,113,227,.18);
+
+}
+
+.pricing-card span{
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+}
+
+.pricing-card h1{
+
+    font-size:88px;
+
+    margin:25px 0 10px;
+
+}
+
+.pricing-card h3{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.pricing-card p{
+
+    color:var(--gray);
+
+    margin-bottom:40px;
+
+    font-size:18px;
+
+}
+
+/*==================================================
+                    FAQ
+==================================================*/
+
+#faq{
+
+    background:#000;
+
+}
+
+.faq-container{
+
+    max-width:950px;
+
+    margin:70px auto 0;
+
+}
+
+.faq-item{
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    border-color:var(--primary);
+
+    transform:translateX(8px);
+
+}
+
+.faq-item h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.faq-item p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+            END PART 5
+==================================================*/
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+footer{
+
+    background:#050505;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:90px 8% 40px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.footer-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer-content h2{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+    color:var(--white);
+
+}
+
+.footer-content p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    margin:45px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:#d0d0d0;
+
+    transition:.35s;
+
+    font-size:17px;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--primary);
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin:35px 0;
+
+}
+
+.social-icons i{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.social-icons i:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-8px);
+
+}
+
+.copyright{
+
+    margin-top:40px;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+/*==================================================
+                COMMON HOVER
+==================================================*/
+
+img{
+
+    transition:.45s;
+
+}
+
+img:hover{
+
+    transform:scale(1.02);
+
+}
+
+button,
+.btn{
+
+    transition:.35s;
+
+}
+
+button:hover,
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/*==================================================
+            GLASSMORPHISM
+==================================================*/
+
+.glass{
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/*==================================================
+            GLOW UTILITIES
+==================================================*/
+
+.glow-blue{
+
+    box-shadow:
+
+    0 0 25px rgba(0,113,227,.18),
+
+    0 0 60px rgba(0,113,227,.12);
+
+}
+
+.glow-white{
+
+    box-shadow:
+
+    0 0 20px rgba(255,255,255,.08);
+
+}
+
+/*==================================================
+            FADE ANIMATION
+==================================================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s;
+
+}
+
+.fade-up.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==================================================
+            SCALE ANIMATION
+==================================================*/
+
+.scale{
+
+    transform:scale(.9);
+
+    opacity:0;
+
+    transition:.8s;
+
+}
+
+.scale.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/*==================================================
+            IMAGE SHADOW
+==================================================*/
+
+.phone-shadow{
+
+    filter:
+
+    drop-shadow(0 30px 50px rgba(0,113,227,.18))
+
+    drop-shadow(0 0 35px rgba(255,255,255,.08));
+
+}
+
+/*==================================================
+            TEXT GRADIENT
+==================================================*/
+
+.gradient-text{
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #0071e3
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+/*==================================================
+            CONTAINER
+==================================================*/
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/*==================================================
+            SPACING
+==================================================*/
+
+.mt-1{margin-top:20px;}
+.mt-2{margin-top:40px;}
+.mt-3{margin-top:60px;}
+.mt-4{margin-top:80px;}
+
+.mb-1{margin-bottom:20px;}
+.mb-2{margin-bottom:40px;}
+.mb-3{margin-bottom:60px;}
+.mb-4{margin-bottom:80px;}
+
+/*==================================================
+            END PART 6
+==================================================*/
+
+/*==================================================
+        RESPONSIVE (1024px)
+==================================================*/
+
+@media (max-width:1024px){
+
+/*==========================
+        NAVBAR
+==========================*/
+
+.navbar{
+
+    width:94%;
+
+}
+
+.nav-links{
+
+    gap:22px;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+}
+
+/*==========================
+        HERO
+==========================*/
+
+#hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:60px;
+
+    padding-top:160px;
+
+}
+
+.hero-left,
+.hero-right{
+
+    width:100%;
+
+}
+
+.hero-left h1{
+
+    font-size:70px;
+
+}
+
+.hero-left h2{
+
+    font-size:48px;
+
+}
+
+.hero-left p{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-right img{
+
+    width:60%;
+
+}
+
+/*==========================
+    SECTION TITLE
+==========================*/
+
+.section-title h2{
+
+    font-size:44px;
+
+}
+
+.section-title p{
+
+    width:90%;
+
+}
+
+/*==========================
+    DESIGN GRID
+==========================*/
+
+.design-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/*==========================
+    FEATURE GRID
+==========================*/
+
+.feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/*==========================
+    AI SECTION
+==========================*/
+
+#ai{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.ai-left,
+.ai-right{
+
+    width:100%;
+
+}
+
+.ai-left img{
+
+    width:65%;
+
+}
+
+.ai-right h2{
+
+    font-size:46px;
+
+}
+
+/*==========================
+    CAMERA
+==========================*/
+
+.camera-content{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.camera-image img{
+
+    width:65%;
+
+}
+
+.camera-text ul{
+
+    align-items:center;
+
+}
+
+/*==========================
+    DISPLAY
+==========================*/
+
+#display{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.display-image img{
+
+    width:65%;
+
+}
+
+.display-text h2{
+
+    font-size:46px;
+
+}
+
+/*==========================
+    PERFORMANCE
+==========================*/
+
+#performance{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.performance-left img{
+
+    width:65%;
+
+}
+
+.performance-right h2{
+
+    font-size:46px;
+
+}
+
+/*==========================
+    STATS
+==========================*/
+
+.stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/*==========================
+    GALLERY
+==========================*/
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/*==========================
+    SPECIFICATIONS
+==========================*/
+
+.spec-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/*==========================
+    PRICING
+==========================*/
+
+.pricing-card{
+
+    width:90%;
+
+}
+
+/*==========================
+    FOOTER
+==========================*/
+
+.footer-links{
+
+    gap:20px;
+
+}
+
+}
+
+/*==================================================
+        RESPONSIVE (768px)
+==================================================*/
+
+@media (max-width:768px){
+
+/*==========================
+        GLOBAL
+==========================*/
+
+section{
+
+    padding:90px 6%;
+
+}
+
+.btn{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:16px;
+
+}
+
+/*==========================
+        NAVBAR
+==========================*/
+
+.navbar{
+
+    height:75px;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.nav-links{
+
+    display:none;
+
+}
+
+.nav-icons{
+
+    gap:18px;
+
+}
+
+.nav-icons i{
+
+    font-size:22px;
+
+}
+
+/*==========================
+        HERO
+==========================*/
+
+#hero{
+
+    padding-top:130px;
+
+    gap:50px;
+
+}
+
+.hero-left h1{
+
+    font-size:54px;
+
+}
+
+.hero-left h2{
+
+    font-size:34px;
+
+}
+
+.hero-left p{
+
+    font-size:16px;
+
+    width:100%;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.hero-right img{
+
+    width:90%;
+
+}
+
+/*==========================
+    SECTION TITLE
+==========================*/
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.section-title p{
+
+    font-size:16px;
+
+}
+
+/*==========================
+    DESIGN
+==========================*/
+
+.design-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.design-card{
+
+    padding:28px;
+
+}
+
+.design-card img{
+
+    width:80%;
+
+}
+
+/*==========================
+    FEATURES
+==========================*/
+
+.feature-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.feature-card{
+
+    padding:30px;
+
+}
+
+.feature-card h3{
+
+    font-size:24px;
+
+}
+
+/*==========================
+    AI
+==========================*/
+
+.ai-left img{
+
+    width:90%;
+
+}
+
+.ai-right h2{
+
+    font-size:36px;
+
+}
+
+.ai-right p{
+
+    font-size:16px;
+
+}
+
+/*==========================
+    CAMERA
+==========================*/
+
+.camera-image img{
+
+    width:90%;
+
+}
+
+.camera-text h2{
+
+    font-size:36px;
+
+}
+
+.camera-text p{
+
+    font-size:16px;
+
+}
+
+/*==========================
+    DISPLAY
+==========================*/
+
+.display-image img{
+
+    width:90%;
+
+}
+
+.display-text h2{
+
+    font-size:36px;
+
+}
+
+/*==========================
+    PERFORMANCE
+==========================*/
+
+.performance-left img{
+
+    width:90%;
+
+}
+
+.performance-right h2{
+
+    font-size:36px;
+
+}
+
+/*==========================
+    STATS
+==========================*/
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stat{
+
+    padding:35px;
+
+}
+
+/*==========================
+    GALLERY
+==========================*/
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-item img{
+
+    height:320px;
+
+}
+
+/*==========================
+    SPECIFICATIONS
+==========================*/
+
+.spec-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.spec-card{
+
+    padding:30px;
+
+}
+
+/*==========================
+    PRICING
+==========================*/
+
+.pricing-card{
+
+    padding:45px 30px;
+
+}
+
+.pricing-card h1{
+
+    font-size:64px;
+
+}
+
+.pricing-card h3{
+
+    font-size:28px;
+
+}
+
+/*==========================
+    FAQ
+==========================*/
+
+.faq-item{
+
+    padding:25px;
+
+}
+
+.faq-item h3{
+
+    font-size:20px;
+
+}
+
+/*==========================
+    FOOTER
+==========================*/
+
+.footer-content h2{
+
+    font-size:34px;
+
+}
+
+.footer-links{
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.social-icons{
+
+    gap:18px;
+
+}
+
+.social-icons i{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:18px;
+
+}
+
+}
+
+/*==================================================
+        RESPONSIVE (480px)
+==================================================*/
+
+@media (max-width:480px){
+
+/*==========================
+        GLOBAL
+==========================*/
+
+section{
+
+    padding:70px 5%;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+/*==========================
+        NAVBAR
+==========================*/
+
+.navbar{
+
+    height:70px;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+}
+
+.nav-icons{
+
+    gap:15px;
+
+}
+
+.nav-icons i{
+
+    font-size:20px;
+
+}
+
+/*==========================
+        HERO
+==========================*/
+
+#hero{
+
+    min-height:auto;
+
+    padding-top:110px;
+
+}
+
+.hero-left h1{
+
+    font-size:42px;
+
+}
+
+.hero-left h2{
+
+    font-size:28px;
+
+    line-height:1.3;
+
+}
+
+.hero-left p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    width:100%;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+}
+
+/*==========================
+    SECTION TITLE
+==========================*/
+
+.section-title span{
+
+    font-size:13px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+.section-title p{
+
+    font-size:15px;
+
+}
+
+/*==========================
+    DESIGN
+==========================*/
+
+.design-card{
+
+    padding:24px;
+
+}
+
+.design-card img{
+
+    width:90%;
+
+}
+
+.design-card h3{
+
+    font-size:21px;
+
+}
+
+/*==========================
+    FEATURES
+==========================*/
+
+.feature-card{
+
+    padding:25px;
+
+}
+
+.feature-card i{
+
+    font-size:36px;
+
+}
+
+.feature-card h3{
+
+    font-size:22px;
+
+}
+
+.feature-card p{
+
+    font-size:15px;
+
+}
+
+/*==========================
+    AI
+==========================*/
+
+.ai-left img{
+
+    width:100%;
+
+}
+
+.ai-right h2{
+
+    font-size:30px;
+
+}
+
+.ai-right p{
+
+    font-size:15px;
+
+}
+
+/*==========================
+    CAMERA
+==========================*/
+
+.camera-image img{
+
+    width:100%;
+
+}
+
+.camera-text h2{
+
+    font-size:30px;
+
+}
+
+.camera-text li{
+
+    font-size:15px;
+
+}
+
+/*==========================
+    DISPLAY
+==========================*/
+
+.display-image img{
+
+    width:100%;
+
+}
+
+.display-text h2{
+
+    font-size:30px;
+
+}
+
+/*==========================
+    PERFORMANCE
+==========================*/
+
+.performance-left img{
+
+    width:100%;
+
+}
+
+.performance-right h2{
+
+    font-size:30px;
+
+}
+
+/*==========================
+    STATS
+==========================*/
+
+.stat{
+
+    padding:28px;
+
+}
+
+.stat h2{
+
+    font-size:42px;
+
+}
+
+.stat p{
+
+    font-size:15px;
+
+}
+
+/*==========================
+    GALLERY
+==========================*/
+
+.gallery-item img{
+
+    height:260px;
+
+}
+
+/*==========================
+    SPECIFICATIONS
+==========================*/
+
+.spec-card{
+
+    padding:25px;
+
+}
+
+.spec-card h3{
+
+    font-size:22px;
+
+}
+
+/*==========================
+    PRICING
+==========================*/
+
+.pricing-card{
+
+    padding:40px 20px;
+
+}
+
+.pricing-card h1{
+
+    font-size:52px;
+
+}
+
+.pricing-card h3{
+
+    font-size:24px;
+
+}
+
+/*==========================
+    FAQ
+==========================*/
+
+.faq-item{
+
+    padding:20px;
+
+}
+
+.faq-item h3{
+
+    font-size:18px;
+
+}
+
+.faq-item p{
+
+    font-size:15px;
+
+}
+
+/*==========================
+    FOOTER
+==========================*/
+
+.footer-content h2{
+
+    font-size:30px;
+
+}
+
+.footer-content p{
+
+    font-size:15px;
+
+}
+
+.footer-links{
+
+    gap:12px;
+
+}
+
+.social-icons{
+
+    gap:14px;
+
+}
+
+.social-icons i{
+
+    width:45px;
+
+    height:45px;
+
+    font-size:16px;
+
+}
+
+.copyright{
+
+    font-size:13px;
+
+}
+
+}
+
+/*==================================================
+                END PART 9
+==================================================*/
+
+/*==================================================
+            FINAL UTILITIES
+==================================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+.h-100{
+
+    height:100%;
+
+}
+
+.d-flex{
+
+    display:flex;
+
+}
+
+.align-center{
+
+    align-items:center;
+
+}
+
+.justify-center{
+
+    justify-content:center;
+
+}
+
+.space-between{
+
+    justify-content:space-between;
+
+}
+
+.flex-column{
+
+    flex-direction:column;
+
+}
+
+.rounded{
+
+    border-radius:20px;
+
+}
+
+.shadow{
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+.hidden{
+
+    overflow:hidden;
+
+}
+
+/*==================================================
+            IMAGE EFFECTS
+==================================================*/
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+.gallery-item img,
+.design-card img,
+.hero-right img,
+.ai-left img,
+.camera-image img,
+.display-image img,
+.performance-left img{
+
+    transition:.5s ease;
+
+}
+
+.gallery-item:hover img,
+.design-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==================================================
+            LINK EFFECT
+==================================================*/
+
+a{
+
+    transition:.35s ease;
+
+}
+
+a:hover{
+
+    color:var(--primary);
+
+}
+
+/*==================================================
+            BUTTON EFFECT
+==================================================*/
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.15);
+
+    transition:.5s;
+
+}
+
+.btn:hover::before{
+
+    left:100%;
+
+}
+
+/*==================================================
+            CARD TRANSITIONS
+==================================================*/
+
+.design-card,
+.feature-card,
+.spec-card,
+.gallery-item,
+.stat,
+.pricing-card,
+.faq-item{
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease,
+    border-color .4s ease;
+
+}
+
+/*==================================================
+            REVEAL ANIMATION
+==================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==================================================
+            FADE ANIMATION
+==================================================*/
+
+.fade{
+
+    opacity:0;
+
+    transition:opacity .8s ease;
+
+}
+
+.fade.active{
+
+    opacity:1;
+
+}
+
+/*==================================================
+            SCALE ANIMATION
+==================================================*/
+
+.zoom{
+
+    transform:scale(.9);
+
+    opacity:0;
+
+    transition:.8s ease;
+
+}
+
+.zoom.active{
+
+    transform:scale(1);
+
+    opacity:1;
+
+}
+
+/*==================================================
+            ROTATE EFFECT
+==================================================*/
+
+.rotate:hover{
+
+    transform:rotate(3deg);
+
+}
+
+/*==================================================
+            GLOW EFFECT
+==================================================*/
+
+.glow:hover{
+
+    box-shadow:
+
+    0 0 25px rgba(0,113,227,.25),
+
+    0 0 60px rgba(0,113,227,.15);
+
+}
+
+/*==================================================
+            GLASS EFFECT
+==================================================*/
+
+.glass{
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/*==================================================
+            INPUT STYLE
+==================================================*/
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    border-radius:15px;
+
+    outline:none;
+
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:var(--primary);
+
+}
+
+/*==================================================
+            SELECTION
+==================================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==================================================
+            SMOOTH TRANSITIONS
+==================================================*/
+
+*{
+
+    transition-property:
+
+    color,
+
+    background,
+
+    border-color,
+
+    transform,
+
+    opacity,
+
+    box-shadow;
+
+}
+
+
+
+button:focus,
+a:focus{
+
+    outline:2px solid var(--primary);
+
+    outline-offset:4px;
+
+}
+
+/*==================================================
+                GLOBAL ANIMATION
+==================================================*/
+
+*{
+
+    animation-fill-mode:both;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/*==================================================
+                FADE UP
+==================================================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+}
+
+.fade-up.active{
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+                FADE DOWN
+==================================================*/
+
+.fade-down{
+
+    opacity:0;
+
+    transform:translateY(-60px);
+
+}
+
+.fade-down.active{
+
+    animation:fadeDown .9s ease forwards;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+                FADE LEFT
+==================================================*/
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-70px);
+
+}
+
+.fade-left.active{
+
+    animation:fadeLeft .9s ease forwards;
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*==================================================
+                FADE RIGHT
+==================================================*/
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(70px);
+
+}
+
+.fade-right.active{
+
+    animation:fadeRight .9s ease forwards;
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*==================================================
+                ZOOM IN
+==================================================*/
+
+.zoom-in{
+
+    opacity:0;
+
+    transform:scale(.8);
+
+}
+
+.zoom-in.active{
+
+    animation:zoomIn .8s ease forwards;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==================================================
+                FLOAT
+==================================================*/
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    25%{
+
+        transform:translateY(-8px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    75%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+                ROTATE FLOAT
+==================================================*/
+
+.rotate-float{
+
+    animation:rotateFloat 7s ease-in-out infinite;
+
+}
+
+@keyframes rotateFloat{
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px) rotate(2deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+}
+
+/*==================================================
+                PULSE
+==================================================*/
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==================================================
+                GLOW
+==================================================*/
+
+.glow{
+
+    animation:glow 3s ease infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:
+
+        0 0 15px rgba(0,113,227,.20);
+
+    }
+
+    to{
+
+        box-shadow:
+
+        0 0 40px rgba(0,113,227,.45);
+
+    }
+
+}
+
+/*==================================================
+            SCROLL REVEAL
+==================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:1s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-80px);
+
+    transition:1s ease;
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(80px);
+
+    transition:1s ease;
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*==================================================
+            IMAGE HOVER
+==================================================*/
+
+.gallery-item img,
+.design-card img,
+.hero-right img,
+.ai-left img,
+.camera-image img,
+.display-image img,
+.performance-left img{
+
+    transition:.6s ease;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.design-card:hover img{
+
+    transform:scale(1.08) rotate(-3deg);
+
+}
+
+.hero-right:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.ai-left:hover img{
+
+    transform:translateY(-10px);
+
+}
+
+.camera-image:hover img{
+
+    transform:rotate(-2deg) scale(1.04);
+
+}
+
+.display-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.performance-left:hover img{
+
+    transform:translateY(-12px);
+
+}
+
+/*==================================================
+            CARD HOVER
+==================================================*/
+
+.design-card,
+.feature-card,
+.gallery-item,
+.spec-card,
+.stat,
+.pricing-card,
+.faq-item{
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    border-color .45s ease;
+
+}
+
+.design-card:hover,
+.feature-card:hover,
+.gallery-item:hover,
+.spec-card:hover,
+.stat:hover,
+.pricing-card:hover,
+.faq-item:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/*==================================================
+            BUTTON HOVER
+==================================================*/
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-100%;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.18);
+
+    transition:.5s;
+
+}
+
+.btn:hover::before{
+
+    left:100%;
+
+}
+
+.primary:hover{
+
+    box-shadow:
+
+    0 20px 45px rgba(0,113,227,.35);
+
+}
+
+.secondary:hover{
+
+    box-shadow:
+
+    0 20px 45px rgba(255,255,255,.12);
+
+}
+
+/*==================================================
+            ICON HOVER
+==================================================*/
+
+.nav-icons i,
+.social-icons i{
+
+    transition:.35s;
+
+}
+
+.nav-icons i:hover{
+
+    transform:translateY(-3px);
+
+    color:var(--primary);
+
+}
+
+.social-icons i:hover{
+
+    transform:translateY(-8px) rotate(8deg);
+
+}
+
+/*==================================================
+            LINK UNDERLINE
+==================================================*/
+
+.nav-links a,
+.footer-links a{
+
+    position:relative;
+
+}
+
+.nav-links a::after,
+.footer-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover::after,
+.footer-links a:hover::after{
+
+    width:100%;
+
+}
+
+/*==================================================
+            END PART 2
+==================================================*/
+
+/*==================================================
+                RIPPLE EFFECT
+==================================================*/
+
+.ripple{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:20px;
+
+    height:20px;
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+.ripple:hover::after{
+
+    animation:ripple .8s ease;
+
+}
+
+@keyframes ripple{
+
+    0%{
+
+        transform:scale(0);
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:scale(18);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==================================================
+            BACKGROUND GLOW
+==================================================*/
+
+.bg-glow{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(0,113,227,.12);
+
+    filter:blur(140px);
+
+    animation:bgGlow 8s ease-in-out infinite;
+
+}
+
+@keyframes bgGlow{
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+    50%{
+
+        transform:translate(50px,-40px);
+
+    }
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+/*==================================================
+            FLOATING PARTICLES
+==================================================*/
+
+.particle{
+
+    position:absolute;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.25);
+
+    animation:particleFloat 12s linear infinite;
+
+}
+
+@keyframes particleFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    80%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-600px);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==================================================
+            SHIMMER EFFECT
+==================================================*/
+
+.shimmer{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shimmer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.18),
+
+        transparent
+
+    );
+
+}
+
+.shimmer:hover::before{
+
+    animation:shimmer 1.2s;
+
+}
+
+@keyframes shimmer{
+
+    100%{
+
+        left:140%;
+
+    }
+
+}
+
+/*==================================================
+            ROTATING GLOW
+==================================================*/
+
+.rotate-glow{
+
+    animation:rotateGlow 18s linear infinite;
+
+}
+
+@keyframes rotateGlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==================================================
+            BREATHING EFFECT
+==================================================*/
+
+.breath{
+
+    animation:breath 4s ease-in-out infinite;
+
+}
+
+@keyframes breath{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==================================================
+            GRADIENT SHIFT
+==================================================*/
+
+.gradient-move{
+
+    background-size:300% 300%;
+
+    animation:gradientMove 10s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/*==================================================
+            IMAGE PARALLAX
+==================================================*/
+
+.parallax{
+
+    transition:transform .25s ease;
+
+    will-change:transform;
+
+}
+
+/*==================================================
+            SOFT BLINK
+==================================================*/
+
+.blink{
+
+    animation:blink 2s infinite;
+
+}
+
+@keyframes blink{
+
+    0%,100%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:.45;
+
+    }
+
+}
+
+/*==================================================
+            END PART 3
+==================================================*/
+
+/*==================================================
+            ANIMATION DELAYS
+==================================================*/
+
+.delay-1{
+
+    animation-delay:.1s;
+
+}
+
+.delay-2{
+
+    animation-delay:.2s;
+
+}
+
+.delay-3{
+
+    animation-delay:.3s;
+
+}
+
+.delay-4{
+
+    animation-delay:.4s;
+
+}
+
+.delay-5{
+
+    animation-delay:.5s;
+
+}
+
+.delay-6{
+
+    animation-delay:.6s;
+
+}
+
+.delay-7{
+
+    animation-delay:.7s;
+
+}
+
+.delay-8{
+
+    animation-delay:.8s;
+
+}
+
+/*==================================================
+            PAGE LOAD
+==================================================*/
+
+.page-load{
+
+    animation:pageLoad 1.2s ease forwards;
+
+}
+
+@keyframes pageLoad{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+            SCALE IN
+==================================================*/
+
+.scale-in{
+
+    animation:scaleIn .8s ease forwards;
+
+}
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.92);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==================================================
+            SLIDE UP
+==================================================*/
+
+.slide-up{
+
+    animation:slideUp .9s ease forwards;
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+            SLIDE LEFT
+==================================================*/
+
+.slide-left{
+
+    animation:slideLeft .9s ease forwards;
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*==================================================
+            SLIDE RIGHT
+==================================================*/
+
+.slide-right{
+
+    animation:slideRight .9s ease forwards;
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*==================================================
+            BOUNCE
+==================================================*/
+
+.bounce{
+
+    animation:bounce 2.5s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,20%,50%,80%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    40%{
+
+        transform:translateY(-12px);
+
+    }
+
+    60%{
+
+        transform:translateY(-6px);
+
+    }
+
+}
+
+/*==================================================
+            SPIN
+==================================================*/
+
+.spin{
+
+    animation:spin360 8s linear infinite;
+
+}
+
+@keyframes spin360{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==================================================
+            HOVER LIFT
+==================================================*/
+
+.hover-lift{
+
+    transition:transform .35s ease;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/*==================================================
+            SMOOTH IMAGE
+==================================================*/
+
+.smooth-image{
+
+    transition:
+
+    transform .5s ease,
+
+    filter .5s ease,
+
+    opacity .5s ease;
+
+}
+
+/*==================================================
+            PERFORMANCE
+==================================================*/
+
+.hero-right img,
+.design-card,
+.feature-card,
+.gallery-item,
+.spec-card,
+.stat,
+.pricing-card{
+
+    will-change:transform;
+
+}
+
+.fade-up,
+.fade-left,
+.fade-right,
+.zoom-in,
+.reveal{
+
+    will-change:opacity, transform;
+
+}
+
+/*==================================================
+            REDUCE MOTION
+==================================================*/
+
+@media (prefers-reduced-motion: reduce){
+
+*{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/*==================================================
+            END animation.css
+==================================================*/
+
+/*==================================================
+            RIPPLE EFFECT
+==================================================*/
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple-circle{
+
+    position:absolute;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.45);
+
+    transform:translate(-50%,-50%) scale(0);
+
+    animation:rippleAnimation .6s ease-out;
+
+    pointer-events:none;
+
+}
+
+@keyframes rippleAnimation{
+
+    to{
+
+        transform:translate(-50%,-50%) scale(12);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==================================================
+            MOUSE GLOW
+==================================================*/
+
+.mouse-glow{
+
+    position:fixed;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(0,113,227,.12);
+
+    filter:blur(60px);
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:1;
+
+    transition:
+
+    left .08s linear,
+
+    top .08s linear;
+
+}
+
+/*==================================================
+            SCROLL TO TOP
+==================================================*/
+
+.scroll-top{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#0071e3;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:.35s;
+
+    z-index:9999;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,113,227,.35);
+
+}
+
+.scroll-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.scroll-top:hover{
+
+    transform:translateY(-6px);
+
+    background:#0a84ff;
+
+}
+
+/*==================================================
+            FAQ ACTIVE
+==================================================*/
+
+.faq-item.active{
+
+    border-color:#0071e3;
+
+}
+
+.faq-item.active h3{
+
+    color:#0071e3;
+
+}
+
+/*==================================================
+            MOBILE MENU
+==================================================*/
+
+.show-menu{
+
+    display:flex !important;
+
+    flex-direction:column;
+
+    position:absolute;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:#000;
+
+    padding:30px;
+
+    gap:20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    z-index:9999;
+
+}
+

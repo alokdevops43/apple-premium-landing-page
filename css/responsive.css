@@ -1,0 +1,984 @@
+/*==================================================
+        RESPONSIVE.CSS - PART 1
+        Desktop & Laptop
+==================================================*/
+
+/*==========================================
+        LARGE DESKTOP
+==========================================*/
+
+@media (max-width:1400px){
+
+.container{
+
+    width:92%;
+
+}
+
+.hero-left h1{
+
+    font-size:72px;
+
+}
+
+.hero-left h2{
+
+    font-size:52px;
+
+}
+
+.hero-right img{
+
+    width:80%;
+
+}
+
+.section-title h2{
+
+    font-size:50px;
+
+}
+
+.pricing-card{
+
+    width:650px;
+
+}
+
+}
+
+/*==========================================
+        DESKTOP
+==========================================*/
+
+@media (max-width:1200px){
+
+section{
+
+    padding:100px 6%;
+
+}
+
+.navbar{
+
+    width:94%;
+
+}
+
+.nav-links{
+
+    gap:28px;
+
+}
+
+.hero-left{
+
+    width:52%;
+
+}
+
+.hero-right{
+
+    width:48%;
+
+}
+
+.hero-left h1{
+
+    font-size:64px;
+
+}
+
+.hero-left h2{
+
+    font-size:46px;
+
+}
+
+.hero-left p{
+
+    font-size:17px;
+
+}
+
+.design-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.spec-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.ai-right h2{
+
+    font-size:48px;
+
+}
+
+.camera-text h2{
+
+    font-size:48px;
+
+}
+
+.display-text h2{
+
+    font-size:48px;
+
+}
+
+.performance-right h2{
+
+    font-size:48px;
+
+}
+
+.footer-links{
+
+    gap:22px;
+
+}
+
+}
+
+/*==========================================
+        LAPTOP
+==========================================*/
+
+@media (max-width:992px){
+
+.navbar{
+
+    width:95%;
+
+}
+
+.nav-links{
+
+    gap:20px;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+}
+
+.nav-icons{
+
+    gap:18px;
+
+}
+
+#hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:70px;
+
+    padding-top:150px;
+
+}
+
+.hero-left{
+
+    width:100%;
+
+}
+
+.hero-right{
+
+    width:100%;
+
+}
+
+.hero-left p{
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-right img{
+
+    width:60%;
+
+}
+
+#ai,
+
+#display,
+
+#performance{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.camera-content{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.camera-text ul{
+
+    align-items:center;
+
+}
+
+.ai-left img,
+
+.camera-image img,
+
+.display-image img,
+
+.performance-left img{
+
+    width:70%;
+
+}
+
+.section-title{
+
+    margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+}
+
+.pricing-card{
+
+    width:90%;
+
+}
+
+}
+
+/*==================================================
+        RESPONSIVE.CSS - PART 2
+        Tablet & Mobile
+==================================================*/
+
+/*==========================================
+            TABLET
+==========================================*/
+
+@media (max-width:768px){
+
+section{
+
+    padding:90px 5%;
+
+}
+
+/*========== NAVBAR ==========*/
+
+.navbar{
+
+    height:75px;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.nav-links{
+
+    display:none;
+
+}
+
+.nav-icons{
+
+    gap:20px;
+
+}
+
+/*========== HERO ==========*/
+
+#hero{
+
+    padding-top:120px;
+
+    gap:50px;
+
+}
+
+.hero-left h1{
+
+    font-size:52px;
+
+}
+
+.hero-left h2{
+
+    font-size:34px;
+
+}
+
+.hero-left p{
+
+    font-size:16px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.hero-buttons .btn{
+
+    width:240px;
+
+}
+
+.hero-right img{
+
+    width:85%;
+
+}
+
+/*========== TITLES ==========*/
+
+.section-title h2{
+
+    font-size:36px;
+
+}
+
+.section-title p{
+
+    width:100%;
+
+    font-size:16px;
+
+}
+
+/*========== GRIDS ==========*/
+
+.design-grid,
+
+.feature-grid,
+
+.gallery-grid,
+
+.spec-grid,
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/*========== AI ==========*/
+
+.ai-left img{
+
+    width:90%;
+
+}
+
+.ai-right h2{
+
+    font-size:38px;
+
+}
+
+/*========== CAMERA ==========*/
+
+.camera-image img{
+
+    width:90%;
+
+}
+
+.camera-text h2{
+
+    font-size:38px;
+
+}
+
+/*========== DISPLAY ==========*/
+
+.display-image img{
+
+    width:90%;
+
+}
+
+.display-text h2{
+
+    font-size:38px;
+
+}
+
+/*========== PERFORMANCE ==========*/
+
+.performance-left img{
+
+    width:90%;
+
+}
+
+.performance-right h2{
+
+    font-size:38px;
+
+}
+
+/*========== PRICING ==========*/
+
+.pricing-card{
+
+    padding:50px 35px;
+
+}
+
+.pricing-card h1{
+
+    font-size:65px;
+
+}
+
+/*========== FOOTER ==========*/
+
+.footer-links{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.social-icons{
+
+    gap:18px;
+
+}
+
+}
+
+/*==========================================
+            LARGE MOBILE
+==========================================*/
+
+@media (max-width:576px){
+
+.hero-left h1{
+
+    font-size:42px;
+
+}
+
+.hero-left h2{
+
+    font-size:28px;
+
+}
+
+.hero-left p{
+
+    font-size:15px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+.ai-right h2,
+
+.camera-text h2,
+
+.display-text h2,
+
+.performance-right h2{
+
+    font-size:30px;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+}
+
+.pricing-card{
+
+    padding:40px 25px;
+
+}
+
+.pricing-card h1{
+
+    font-size:52px;
+
+}
+
+.pricing-card h3{
+
+    font-size:24px;
+
+}
+
+.gallery-item img{
+
+    height:260px;
+
+}
+
+.stat{
+
+    padding:28px;
+
+}
+
+.spec-card{
+
+    padding:25px;
+
+}
+
+.faq-item{
+
+    padding:22px;
+
+}
+
+.footer-content h2{
+
+    font-size:30px;
+
+}
+
+.social-icons i{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+}
+
+/*==================================================
+        RESPONSIVE.CSS - PART 3
+        Small Mobile & Final Fixes
+==================================================*/
+
+/*==========================================
+            SMALL MOBILE
+==========================================*/
+
+@media (max-width:480px){
+
+html{
+
+    font-size:95%;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+section{
+
+    padding:70px 5%;
+
+}
+
+/*========== NAVBAR ==========*/
+
+.navbar{
+
+    height:70px;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+}
+
+.nav-icons{
+
+    gap:15px;
+
+}
+
+.nav-icons i{
+
+    font-size:20px;
+
+}
+
+/*========== HERO ==========*/
+
+#hero{
+
+    min-height:auto;
+
+    gap:40px;
+
+    padding-top:110px;
+
+}
+
+.hero-left h1{
+
+    font-size:38px;
+
+}
+
+.hero-left h2{
+
+    font-size:26px;
+
+    line-height:1.3;
+
+}
+
+.hero-left p{
+
+    font-size:14px;
+
+}
+
+.hero-buttons{
+
+    width:100%;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+}
+
+.hero-right img{
+
+    width:100%;
+
+}
+
+/*========== SECTION TITLE ==========*/
+
+.section-title{
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.section-title p{
+
+    font-size:15px;
+
+}
+
+/*========== CARDS ==========*/
+
+.design-card,
+.feature-card,
+.spec-card,
+.stat,
+.pricing-card,
+.faq-item{
+
+    padding:22px;
+
+}
+
+.design-card h3,
+.feature-card h3{
+
+    font-size:22px;
+
+}
+
+/*========== IMAGES ==========*/
+
+.gallery-item img{
+
+    height:230px;
+
+}
+
+.ai-left img,
+.camera-image img,
+.display-image img,
+.performance-left img{
+
+    width:100%;
+
+}
+
+/*========== TITLES ==========*/
+
+.ai-right h2,
+.camera-text h2,
+.display-text h2,
+.performance-right h2{
+
+    font-size:28px;
+
+}
+
+/*========== STATS ==========*/
+
+.stat h2{
+
+    font-size:38px;
+
+}
+
+/*========== FOOTER ==========*/
+
+.footer-content h2{
+
+    font-size:28px;
+
+}
+
+.footer-links{
+
+    gap:10px;
+
+}
+
+.social-icons{
+
+    gap:12px;
+
+}
+
+.social-icons i{
+
+    width:44px;
+
+    height:44px;
+
+    font-size:16px;
+
+}
+
+}
+
+/*==========================================
+        EXTRA SMALL DEVICES
+==========================================*/
+
+@media (max-width:375px){
+
+.hero-left h1{
+
+    font-size:34px;
+
+}
+
+.hero-left h2{
+
+    font-size:22px;
+
+}
+
+.hero-left p{
+
+    font-size:13px;
+
+}
+
+.btn{
+
+    padding:14px 20px;
+
+}
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+.pricing-card h1{
+
+    font-size:42px;
+
+}
+
+.pricing-card h3{
+
+    font-size:20px;
+
+}
+
+.gallery-item img{
+
+    height:200px;
+
+}
+
+}
+
+/*==========================================
+        LANDSCAPE PHONES
+==========================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+#hero{
+
+    min-height:auto;
+
+    padding-top:120px;
+
+    padding-bottom:80px;
+
+}
+
+.hero-right img{
+
+    width:55%;
+
+}
+
+}
+
+/*==========================================
+        OVERFLOW FIXES
+==========================================*/
+
+img{
+
+    max-width:100%;
+
+}
+
+.container{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+.gallery-grid,
+.design-grid,
+.feature-grid,
+.spec-grid{
+
+    overflow:hidden;
+
+}
+
+/*==========================================
+        TOUCH DEVICES
+==========================================*/
+
+@media (hover:none){
+
+.design-card:hover,
+.feature-card:hover,
+.gallery-item:hover,
+.spec-card:hover,
+.stat:hover,
+.pricing-card:hover{
+
+    transform:none;
+
+}
+
+}
+
+/*==========================================
+        END RESPONSIVE.CSS
+==========================================*/
+
+.show-menu{
+
+    display:flex !important;
+
+    flex-direction:column;
+
+    position:absolute;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:#000;
+
+    padding:30px 0;
+
+    gap:20px;
+
+    text-align:center;
+
+    z-index:9999;
+
+}
