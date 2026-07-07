@@ -4,8 +4,7 @@ A premium Apple-inspired smartphone landing page built entirely with **HTML5**, 
 
 This project focuses on creating a modern, elegant, and highly interactive landing page featuring smooth animations, responsive layouts, premium UI design, and realistic product presentation.
 
-(https://6a48faf84749276bfbd671db--superlative-lokum-c7c692.netlify.app/)
-
+https://alokdevops43.github.io/apple-premium-landing-page/
 ---
 
 ## 🚀 Features
